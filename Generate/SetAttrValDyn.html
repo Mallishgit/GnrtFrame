@@ -1,0 +1,48 @@
+<html>
+
+<style>
+h1,h4 {
+color:red; 
+background-color:yellow;
+}
+h6 {
+color:green;
+background-color:pink;
+}
+.SumiRavi 
+{
+color:blue;
+background-color:cyan;
+}
+</style>
+<script>
+function chgHd()
+{
+h1Id.innerHTML=PraId.value;
+}
+</script>
+
+<input id="txId" type=text >
+<input id="btnId" type=button value="Change Type" ><br>
+<input id="chgId" type=text><br>
+<p id="pId" > </p>
+
+<h1>Dynamic Input Type</h1>
+
+<p>The button below activates a JavaScript when it is clicked.</p>
+<form>
+Attribute Name <input type=text id=IpId> <br>
+Attribute Value <input type=text id=IpValId><br>
+<input type=button value="Change type" onclick=msg()><br>
+  <input type="button" value="Dyn Input" id="typeId">
+</form>
+
+<script>
+function msg() {
+	typeId.setAttribute(IpId.value,IpValId.value);
+	//typeId.type=IpValId.value;
+}
+</script>
+
+
+</html>

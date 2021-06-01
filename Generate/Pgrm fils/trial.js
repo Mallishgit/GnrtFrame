@@ -1,0 +1,14 @@
+var templMatch ="&lt;&gt;";
+ var pgTitle="";
+ var pgInstruction="";
+ var ddOption=[];
+var ddi=0;
+ddOption[ddi++]=["Lion","Tiger","Deer","Fox"]
+var imgAry=[];
+imgAry=["../baseImgFolder/images/watering.jpg","../baseImgFolder/images/planting.jpg","../baseImgFolder/images/bouncing.jpg"];
+var quesAns=[];
+ var qai=0;
+quesAns[qai++]=[G_imgIdTok +"s0"+ G_SplitterTok+"He is"+G_SplitterTok+G_EdIdTok + G_SAnsTok+G_EMulAnsS+"watering"+G_EMulAnsE+G_EAnsTok];
+quesAns[qai++]=["Our national animal is"+G_SplitterTok+G_ddIdTok +"0"+G_SAnsTok+G_EMulAnsS+"Lion"+G_EMulAnsE+G_EAnsTok];
+quesAns[qai++]=[G_imgIdTok +"s1"+ G_SplitterTok+"They are"+G_SplitterTok+G_EdIdTok + G_SAnsTok+G_EMulAnsS+"planting"+G_EMulAnsE+G_EAnsTok];
+quesAns[qai++]=[G_imgIdTok +"s2"+ G_SplitterTok+"He is"+G_SplitterTok+G_EdIdTok + G_SAnsTok+G_EMulAnsS+"bouncing"+G_EMulAnsE+G_EAnsTok];

@@ -1,0 +1,75 @@
+<html>
+<body>
+<h1 align="center">Work Sheet Generater Frame Work</h1>
+<script src="preferences.js"></script>
+<script src="drpcreate.js"></script>
+
+<body id="bdId" onload="callCreate()">
+<div id="scrDiv"></div>
+<div id="tblDiv"></div>
+<div id="lDiv"></div>
+<div id="gDiv"></div>
+<div id="ansDiv"></div>
+<script src="gnrt.js"></script>
+<script src="createQs.js"></script>
+<script language="javascript">
+</script>
+<style>
+div.ex1{
+	background-color:lightblue;
+	width:800px;
+	height:150px;
+	overflow:scroll;
+}
+div.ex2{
+	background-color:lightyellow;
+	width:800px;
+	height:150px;
+	overflow:scroll;
+}
+.txtclr{
+	background-color:lightgray;
+	color:blue;
+}
+</style>
+<input type="button" id="hideShowBtn" value="Hide Page preference" onClick="hideOrShowDiv()">
+<div class="ex2" id="pgStyle">
+<h3 align="center">Page Info</h3>
+Page template : <input type="text" id="tmplt" disabled="true" value="still compliting"><br>
+<!--Select your page template : <select id="tmplt">
+	<option value="ganDynFloat">ganDynFloat</option>
+	<option value="ganDynInt">ganDynInt</option>
+</select><br>-->
+<l>Page Title : </l><input type="text" id="pgTtl"><br>
+<l>Page Instruction :</l> <input type="text" id="pgInst"><br>
+<!--<l>Select your Rigion color :</l> <input type="color" id="pgClr">-->
+</div>
+<h1> Question table</h1>
+<input type="button" id="lMove" value="<<" onclick="leftMove()">
+<input type="button" id="rMove" value=">>" onclick="rightMove()">
+<input type="button" id="btn" value="-" onclick="deleteSItm()">
+<input type="button" id="cpBtn" value="Make Copy" onclick="makeCopy()">
+<input type="button" id="qtBtn" value="New Question" onclick="newQ()">
+<div class="ex1" id="qDiv">
+</div>
+<l>File Name:</l><input type="text" id="FlNameId" value="">
+<input align="left" type="button" id="gnrt" value="Click on me to get js file" onclick="Download()"><br><br>
+<l>Text Question:</l><input type="textbox" id="txbx">
+<input type="button" id="addVal" value="Set To Question" onclick="setQs(addVal)"><br>
+<br><h3 id="optDivId">Options List</h3>
+<div class="ex1">
+<table id="optId">
+</table>
+</div>
+Input Box:<input type="textbox" id="blnkTxt">
+<input type="button" id="addblnk" value="Set To Question" onclick="setBlnkToQs(addblnk)"><br>
+<h3>Image part</h3>
+Image Folder Name:<input type="text" id="imgFolder"><br>
+New Image:<input type="text" id="txid">
+<input type="button" id="btnid" value="Set Image" onclick="setImg()">
+<input type="button" id="imgDel" value="Delete Image" onclick="delImg()">
+<input type="button" id="sImgId" value="Set To Question" onclick="setImgToQs(sImgId)">
+<div id="dId" class="ex1">
+</div>
+</body>
+</html>
